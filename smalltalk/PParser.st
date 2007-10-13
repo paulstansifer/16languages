@@ -1,27 +1,15 @@
-"Filed out from GNU Smalltalk version 2.95d on 7-Oct-2007 21:41:28"
-
-"Object subclass: PParser [
-    | pre lists |
-    
-    <category: nil>
-    <comment: nil>
-"
 Object subclass: #PParser
 	instanceVariableNames: 'curEnv lists tags'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: nil !
 
-
-
 !PParser methodsFor: 'general'!
-    emit: text
-	Transcript show: text.
-!
     init
 	curEnv := nil.
 	lists := OrderedCollection new.
 	tags := OrderedCollection new.
+	" create some of the elements of syntax "
 	tags add: (ParserTagState new init: 'tt' enterSyn: '[=' leaveSyn: '=]');
 	     add: (ParserTagState new init: 'i' enterSyn: '///' leaveSyn: '///');
 	     add: (ParserTagState new init: 'b' enterSyn: '***' leaveSyn: '***');
@@ -38,6 +26,7 @@ Object subclass: #PParser
 	^nil.
 !
     unwindUntil: pos
+	" Pop the invalidated elements off the list stack. "
 	(lists size) to: pos by: -1 do: [: idx|
 		Transcript show: '</', (self tagFromList: lists removeLast), '>'.
 	].
@@ -46,13 +35,13 @@ Object subclass: #PParser
 	marker = $  ifTrue: [^ 'pre'].
 	marker = $^ ifTrue: [^ 'blockquote'].
 	^nil.
-
-
 !
     parseLine: line
 	| first inLists charPosition envTag |
 	charPosition := 0.
-	first := line at: 1.
+	line size > 0 ifTrue: [
+	    first := line at: 1.
+	] ifFalse: [first := nil].
 
 	envTag := self environFromMarker: first.
 
@@ -103,6 +92,8 @@ Object subclass: #PParser
 
 	].
 
+	" stop here if there's nothing on the line "
+	first = nil ifTrue: [Transcript cr. ^nil].
 
 	[charPosition <= line size] whileTrue: [
 	    | match tagidx |
