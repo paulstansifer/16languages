@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg18795"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docbase="/Users/paul/Desktop/16languages"
+   sodipodi:docname="umd.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs18797" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="339.22151"
+     inkscape:cy="570.55578"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="697"
+     inkscape:window-height="581"
+     inkscape:window-x="231"
+     inkscape:window-y="81" />
+  <metadata
+     id="metadata18800">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#f6f6f6;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 104.84375,372.0625 C 104.84375,425.30208 104.84375,478.54167 104.84375,531.78125 C 261.13542,531.78125 417.42708,531.78125 573.71875,531.78125 C 573.71875,477.875 573.71875,423.96875 573.71875,370.0625 C 417.42708,370.0625 261.13542,370.0625 104.84375,370.0625 L 104.84375,371.0625 L 104.84375,372.0625 z "
+       id="path20783" />
+    <path
+       style="fill:#faf7e8;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 108.84375,376.0625 C 108.84375,426.63542 108.84375,477.20833 108.84375,527.78125 C 262.46875,527.78125 416.09375,527.78125 569.71875,527.78125 C 569.71875,476.54167 569.71875,425.30208 569.71875,374.0625 C 416.09375,374.0625 262.46875,374.0625 108.84375,374.0625 L 108.84375,375.0625 L 108.84375,376.0625 z "
+       id="rect19808" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect19790"
+       width="452.85715"
+       height="145.71426"
+       x="112.85714"
+       y="378.07648" />
+    <flowRoot
+       xml:space="preserve"
+       style="font-size:36px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;font-family:Luxi Serif"
+       id="flowRoot19792"
+       transform="translate(0,20)"><flowRegion
+         id="flowRegion19794"><use
+           x="0"
+           y="0"
+           xlink:href="#rect19790"
+           id="use19796"
+           width="744.09448"
+           height="1052.3622" /></flowRegion><flowPara
+         id="flowPara19804">&quot;The use/mention distinction&quot;</flowPara><flowPara
+         id="flowPara19800">is not</flowPara><flowPara
+         id="flowPara19802">&quot;strictly enforced here&quot;</flowPara></flowRoot>  </g>
+</svg>

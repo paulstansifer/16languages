@@ -1,0 +1,41 @@
+This entry was accumulated over a long time.  Also, I'm playing with the syntax, so I've kinda overused italics.  
+* The "deeper" method names in Smalltalk make it easier to make more methods that do similar things differently: i.e. [=substring:len:=] vs. [=substring:until:=].
+* Except that there isn't ///any/// substring in GNU Smalltalk!  The choice of methods is a little maddening, especially since I decided not to use regular expressions for the parsing.  (In fact, this is based on a grammar that I had previously which was parsed entirely by Perl regular expression replacements.
+* I'm utterly flummoxed by the lack of [=substring:=].  I wound up using [=indexOfRegex:from:to:=] to do matching, and changing the syntax to not use any  regex metacharacters.  I think I'm missing something big here.
+* [=copyFrom:to:=] on on [=SequenceableCollection=]. Arggggh!  It took me sooooo long to figure that out.  ***Argggh!***
+* I realized that it was easier to use [=copyFrom:=] instead, which has even worse performance implications than what I originally tried.  When I saw that even my little test program incurred a garbage collection, I decided to implement a method that only matches against a substring.  (turns out that such a thing exists: [=matchSubCollection:startingAt:=] on [=SequenceableCollection=])
+* Final score: I was frustrated for a long time by the nonexistence of something that existed and I turned out not to want to use!  If one flaw in my abilities as a programmer stands out above all the others, its my myopic obsession with attacking a problem in only one way.
+* I have one excuse: I was reluctant to tack on a new message to [=SequenceableCollection=] or [=String=], out of resistance to namespace pollution.  It's not a good excuse, I know.
+* Anyways, I'm finally pretty happy with the parser.  In fact, this entry was written in its syntax and converted with it.  -s-Except for one strange bug: For the items of syntax that consist of three characters in a row.-s- Turns out that [=matchSubCollection:startingAt:=] wasn't doing quite what I wanted it to, so I had to rewrite it.  Still kinda myterious.  
+* -s-Oh, I guess I could have used [=indexOf:startingAt:=] also.-s-  Oops, no.  That's the index of an element, not a substring.  I hadn't noticed that such dual meanings could occur ([=indexOf:matchCase:startingAt:=] ///does/// operate on substrings, though, demonstrating that, sometimes, coming up with a good name for a method is just hard.
+* The syntax is as follows (I'm using preformatted text to suppress parsing, 'cause I haven't made any syntax for suppressing it yet.):
+ * bulleted
+ * list
+ ** nested
+ *** deeper
+ *# mixed
+ *# with
+ *# numbers
+ ///Italic///, ***Bold***, [=teletype=], -s-strikethrough-s-
+ ///Nesting ***is [=allowed=]***///
+ Link to Wikipedia article: [[Pet eye remover]]
+  Start lines with a space 
+  to make them preformatted,
+ ^or a '^' to make a blockquote.
+ mdash:---  arrows:<-- --> <->
+Becomes:
+* bulleted
+* list
+** nested
+*** deeper
+*# mixed
+*# with
+*# numbers
+///Italic///, ***Bold***, [=teletype=], -s-strikethrough-s-
+///Nesting ***is [=allowed=]***///
+Link to Wikipedia article: [[Pet eye remover]]
+ Start lines with a space 
+ to make them preformatted,
+^or a '^' to make a blockquote.
+mdash:---  arrows:<-- --> <->
+*I'm pretty happy with the code I've written for this.  It's a little long, but it's pretty nicely-structured; I should easily be able to add more elements, elements that nest with themselves, sanity checks, different kinds of syntax.  I intend to post the code later. 

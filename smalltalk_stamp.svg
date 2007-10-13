@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg24931"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   sodipodi:docbase="/Users/paul/Desktop/16languages"
+   sodipodi:docname="smalltalk_stamp.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/Users/paul/Desktop/16languages/smalltalk_stamp.png"
+   inkscape:export-xdpi="55"
+   inkscape:export-ydpi="55">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="576.38126"
+     inkscape:cy="759.07854"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:window-width="697"
+     inkscape:window-height="581"
+     inkscape:window-x="415"
+     inkscape:window-y="126" />
+  <defs
+     id="defs24933">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26956">
+      <path
+         d="M 161.42857,165.21933 C 161.42857,165.21933 204.74118,141.6479 235.23739,165.21933 C 256.97203,141.6479 298.62026,147.36219 309.04694,165.21933 C 317.79716,150.21933 378.5409,145.21933 382.85609,165.21933 C 396.45724,140.93362 455.77269,142.36219 456.66604,165.21933 C 469.23555,138.07647 530.63867,165.5957 530.47562,165.21933 L 530.47687,356.64789 C 530.51695,356.63715 473.52257,378.07646 456.66732,356.64789 C 453.63139,380.9336 391.45908,390.21932 382.85817,356.64789 C 369.25702,388.79075 315.65585,379.50503 309.04822,356.64789 C 302.193,381.64789 248.40191,378.79075 235.23864,356.64789 C 225.45602,370.9336 161.42857,356.64789 161.42857,356.64789 C 161.42857,292.83837 161.42857,229.02885 161.42857,165.21933 C 161.42857,165.21933 161.42857,165.21933 161.42857,165.21933"
+         id="path26958"
+         style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1"
+         sodipodi:nodetypes="cccccccccccccc" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata24936">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       style="fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 418.96875,139.5 C 406.32243,140.0493 393.48648,143.31837 383.15625,150.84375 C 369.03787,140.71615 350.30845,143.19323 333.9375,144.28125 C 325.48294,145.41585 316.97078,147.52801 309.625,151.96875 C 288.37118,136.56828 257.65489,138.04597 236.03125,151.78125 C 233.11524,154.13019 229.69107,149.54565 226.34375,149.3125 C 203.99382,141.49984 177.1467,146.29458 155.82589,155.09375 C 155.82589,164.94699 155.4375,172.47436 155.4375,182.1875 C 155.4375,230.11458 155.4375,278.04167 155.4375,325.96875 C 180.68282,329.61177 206.90998,335.84955 232.21875,329.65625 C 235.58052,326.70247 237.18706,332.38921 240.34375,333 C 257.26606,342.93952 278.75066,343.99506 297.3125,338.46875 C 301.66573,336.90977 305.77684,334.59768 309.21875,331.5 C 324.33595,345.00306 347.37154,347.0596 366.31976,341.42223 C 372.35544,339.84031 378.05381,335.2261 382.5625,332.25 C 396.25954,347.18845 419.2445,347.12155 437.59375,342.65625 C 445.69977,340.55828 453.76408,336.62413 459.03125,330 C 477.22966,338.53713 498.38907,334.37646 517.28834,330.53153 C 523.06909,328.63098 531.78853,328.00193 536.29648,323.80742 C 536.29648,314.50786 536.46875,309.30874 536.46875,301.90625 C 536.46875,253.125 536.46875,204.34375 536.46875,155.5625 C 512.88225,148.77774 487.44613,139.39936 462.9375,147.0625 C 460.70356,147.79252 458.41344,151.78426 456.59375,148.4375 C 446.35084,139.59257 431.78868,139.43629 418.96875,139.5 z "
+       id="path39099"
+       sodipodi:nodetypes="cccccccccccccccccccccccc" />
+    <g
+       id="g26949"
+       clip-path="url(#clipPath26956)"
+       transform="matrix(1,0,0,0.839552,0,21.491211)">
+      <rect
+         y="147.2655"
+         x="132.32999"
+         height="272.74118"
+         width="110.10665"
+         id="rect25940"
+         style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="139.77602"
+         x="235.82458"
+         height="259.60919"
+         width="85.862968"
+         id="rect26917"
+         style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="136.15382"
+         x="309.10669"
+         height="279.81229"
+         width="89.903564"
+         id="rect26915"
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="145.24519"
+         x="382.84781"
+         height="246.47722"
+         width="104.04571"
+         id="rect26925"
+         style="fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <rect
+         y="122.01169"
+         x="456.58899"
+         height="281.83258"
+         width="80.81221"
+         id="rect26911"
+         style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot27929"
+       style="font-weight:normal;fill:#000000;font-family:Bodoni SvtyTwo ITC TT;fill-opacity:1"
+       transform="matrix(1.1107202,0,0,1.1107202,-83.006528,-31.394028)"><flowRegion
+         id="flowRegion27931"><rect
+           id="rect27933"
+           width="400.02042"
+           height="115.15741"
+           x="185.86807"
+           y="192.72237"
+           style="font-weight:normal;fill:#000000;font-family:Bodoni SvtyTwo ITC TT;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara27935"
+         style="font-size:56px;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-opacity:1;font-family:Bodoni SvtyTwo ITC TT;fill-opacity:1">SMALLTALK:</flowPara><flowPara
+         style="font-size:28px;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;stroke:none;stroke-opacity:1;font-family:Bodoni SvtyTwo ITC TT;fill-opacity:1"
+         id="flowPara28906">[human-computer symbiosis]</flowPara></flowRoot>  </g>
+</svg>

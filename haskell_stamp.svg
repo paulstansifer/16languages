@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2211"
+   sodipodi:version="0.32"
+   inkscape:version="0.45.1"
+   width="185"
+   height="176"
+   version="1.0"
+   sodipodi:docbase="/Users/paul/Desktop/16languages"
+   sodipodi:docname="haskell_stamp.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/Users/paul/Desktop/16languages/haskell_stamp.png"
+   inkscape:export-xdpi="55"
+   inkscape:export-ydpi="55">
+  <metadata
+     id="metadata2216">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2214" />
+  <sodipodi:namedview
+     inkscape:window-height="675"
+     inkscape:window-width="799"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1"
+     inkscape:cx="92.5"
+     inkscape:cy="88.643123"
+     inkscape:window-x="440"
+     inkscape:window-y="141"
+     inkscape:current-layer="svg2211" />
+  <path
+     transform="matrix(1.7863839,0,0,1.7863839,-72.658667,-67.816154)"
+     d="M 162.64204 87.106575 A 71.114738 71.114738 0 1 1  20.412567,87.106575 A 71.114738 71.114738 0 1 1  162.64204 87.106575 z"
+     sodipodi:ry="71.114738"
+     sodipodi:rx="71.114738"
+     sodipodi:cy="87.106575"
+     sodipodi:cx="91.527306"
+     id="path41459"
+     style="opacity:1;fill:#dcdcdc;fill-opacity:1;stroke:none;stroke-width:20.63861465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     sodipodi:type="arc" />
+  <path
+     sodipodi:type="arc"
+     style="opacity:1;fill:none;fill-opacity:1;stroke:#370360;stroke-width:27.65306282;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path7121"
+     sodipodi:cx="91.527306"
+     sodipodi:cy="87.106575"
+     sodipodi:rx="71.114738"
+     sodipodi:ry="71.114738"
+     d="M 162.64204 87.106575 A 71.114738 71.114738 0 1 1  20.412567,87.106575 A 71.114738 71.114738 0 1 1  162.64204 87.106575 z"
+     transform="matrix(1.4067158,0,0,1.4067158,-37.908666,-34.744563)" />
+  <path
+     style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 175.20178,88.495894 C 175.20178,135.08995 137.38631,172.90542 90.792257,172.90542 C 44.198198,172.90542 6.3827294,135.08995 6.3827294,88.495894 C 6.3827294,41.901835 44.198198,4.0863659 90.792257,4.0863659 C 137.38631,4.0863659 175.20178,41.901835 175.20178,88.495894 z "
+     id="path2220" />
+  <text
+     xml:space="preserve"
+     style="font-size:40px;fill:#36807f;fill-opacity:1;font-family:STKaiti"
+     id="text2231"
+     transform="matrix(0.9918829,-0.1271549,0.1271549,0.9918829,-10.653316,13.120876)"><textPath
+       xlink:href="#path2220"
+       id="textPath2237"
+       style="font-size:40px;fill:#36807f;fill-opacity:1"><tspan
+   id="tspan2235"
+   y="13.309942"
+   x="28.40625"
+   style="font-size:40px;fill:#47a9a8;fill-opacity:1">                                 HASKELL</tspan></textPath></text>
+  <path
+     id="path5161"
+     d="M 175.20178,88.495894 C 175.20178,41.901835 137.38631,4.0863659 90.792257,4.0863659 C 44.198198,4.0863659 6.3827294,41.901835 6.3827294,88.495894 C 6.3827294,135.08995 44.198198,172.90542 90.792257,172.90542 C 137.38631,172.90542 175.20178,135.08995 175.20178,88.495894 z "
+     style="fill:none;fill-opacity:1;stroke:none;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1" />
+  <text
+     xml:space="preserve"
+     style="font-size:24px;font-style:normal;font-weight:normal;fill:#46aaa9;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:STKaiti"
+     id="text5171"
+     transform="matrix(1.3282275,0,0,1.3282275,-29.811366,-28.81517)"><textPath
+       xlink:href="#path5161"
+       id="textPath5175"
+       style="font-size:28px;font-style:normal;font-weight:normal;fill:#46aaa9;fill-opacity:1;stroke:none;stroke-opacity:1">                                               Land of Curry</textPath></text>
+  <image
+     xlink:href="HaskellLogo.png"
+     sodipodi:absref="/Users/paul/Desktop/16languages/HaskellLogo.png"
+     width="185"
+     height="176"
+     id="image2218"
+     x="0"
+     y="0" />
+</svg>
