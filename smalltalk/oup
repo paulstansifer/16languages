@@ -1,10 +1,6 @@
-<ul><li> The parser, slightly cleaned-up and bug-fixed, is at http://16languages.googlecode.com/svn/smalltalk/PParser.st</li>
-<li> I'm working on a backend code generator for the <a href="http://en.wikipedia.org/wiki/POV-Ray">POV-Ray</a> Scene Description Language.  It's kinda a quirky language, with a lot of constructs representing graphical primitives, and the syntax is kinda complicated in weird ways.  It's actually Turing-complete, by virtue of some preprocessing commands, but it's a little bit bulky to use.  That's the reason for this project in the first place.</li>
-<li> I've never really seen this, writing in accessor-full languages like Java and C++, but I guess it really is true that sometimes you want a method that, for most classes, simply returns a class variable, but for some has a "real" implementation.  Dealing with the POV-Ray SDL, there are gray areas between things that should be expressed as subclasses, and things that should be expressed with instance variables.  </li>
-<li> I randomly ran into <tt>allOwners</tt>, and thought "What a ridiculous method!"  And then I figured out a use for it: a hackish way to decide whether an item of syntax (in the POV-Ray SDL) was frequently-used, and therefore should be given a name and predefined to save space.</li>
+<ul><li> The name for your variables changes depending on how much type information you give.  If something's used as a stack for parsing, but stored as an <tt>OrderedCollection</tt>, it makes sense to call it <tt>stack</tt>, sometimes.  Other times, programming in an explicitly-typed language, I've felt like it's stupid to give something a name other than it's type: "I want to reheapify the heap.  The only thing in scope that can be reheapified!"  Maybe I should just break down and use the name <tt>the</tt> in cases like that.  It seems classier than <tt>theHeap</tt>.  </li>
+<li> I'm now learning XQuery at work.  I wonder how much interference there will be between XQuery and Smalltalk, given that they are basically each other's opposites.</li>
+<li> I still haven't gotten used to duck typing, and not having to make type relationships explicit.  It's certainly nice to not have to share implementation to share interface &mdash; this seems to need to happen more than one would expect.</li>
+<li> I have to admit that 1-based arrays aren't as strange as I had feared.  </li>
+<li> This ad-hoc approach to writing a compiler seems to be working suprisingly well, 1/16th the way in.  It's suprisingly easy to say "Oh, I can push that functionality up/down a level."  It remains to be seen how I feel when I write the other sides of these kind of jagged interfaces.  </li>
 
-GNU Smalltalk ready
-
-st> 
-st> 
-st> 

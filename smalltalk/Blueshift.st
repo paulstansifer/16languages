@@ -6,8 +6,8 @@ Object subclass: #ActionPoint
 
 ! ActionPoint methodsFor: 'general' !
     tick: outside
+	rand = nil ifTrue: [ rand := Random new. ].
 	temperature := ((0.9 * temperature) + (0.1 * outside) + rand next) * 0.9.
-!
 
 !!
 

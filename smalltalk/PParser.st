@@ -10,7 +10,7 @@ Object subclass: #PParser
 	lists := OrderedCollection new.
 	tags := OrderedCollection new.
 	" create some of the elements of syntax "
-	tags add: (ParserTagState new init: 'tt' enterSyn: '[=' leaveSyn: '=]');
+	tags add: (ParserTagState new init: 'code' enterSyn: '[=' leaveSyn: '=]');
 	     add: (ParserTagState new init: 'i' enterSyn: '///' leaveSyn: '///');
 	     add: (ParserTagState new init: 'b' enterSyn: '***' leaveSyn: '***');
 	     add: (ParserTagState new init: 'strike' enterSyn: '-s-' leaveSyn: '-s-');
@@ -117,7 +117,8 @@ Object subclass: #PParser
 
 	].
 	lists size > 0 ifTrue: [ Transcript show: '</li>'. ].
-	Transcript cr.
+	" newlines seem to be messing with Blogger "
+	"Transcript cr."
 !
     sub: char
 	char = $< ifTrue:[^'&lt;'].
