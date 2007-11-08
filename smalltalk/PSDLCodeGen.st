@@ -32,42 +32,47 @@ PFunnyNester class
 	PFunnyNester add: self.
 !
     emitNested
-	| retVal |
 	^ self tag, '{', self emitNaked, '}'.
 !
     emitNaked
 	declaredName = nil ifTrue: [
-	    self emitCore.
+	    |retVal|
+	    retVal := self emitCore.
 	    transforms do: [ :t|
-		t emit.
+		retVal := retVal, t emit.
 	    ].
 	] ifFalse: [
-	    Transcript show: declaredName.
+	    ^declaredName.
 	].
 !
     emitInFlatContext
 	declaredName = nil ifTrue: [
-	    
+	    |retVal|
+	    retVal := ''.
 	    transforms doReverse: [ :t|
-		t inverse emit.
+		retVal := retVal, t inverse emit.
 	    ].
 	
-	    self emitNaked.
+	    retVal := retVal, self emitNaked.
+	    ^retVal.
 	] ifFalse: [
-	    Transcript show: declaredName.
+	    ^declaredName.
 	].
 !
     emitCore
-	self emitChildren.
+	^self emitChildren.
 !
     emitChildren
+	|retVal|
+        retVal := ''.
 	children do: [ :c|
 	    (c class = self class) | c reallyNests  ifTrue:[
-		c emitFlat.
+		retVal := retVal, c emitFlat.
 	    ] ifFalse: [
-		c emitNested.
+		retVal := retVal, c emitNested.
 	    ].
 	].
+	^retVal.
 !
     addChild: c
 	children add: c
@@ -113,7 +118,8 @@ PObject class instanceVariableNames: 'lastId' !
 	interior := i.
 !
     emitCore
-	Transcript show: body.
+	|retVal|
+        retVal :=  body.
 	
 	finish class = PMapped ifTrue: [
 	    " POV-Ray doesn't have finish_maps, but it does have texture_maps. "
@@ -122,23 +128,20 @@ PObject class instanceVariableNames: 'lastId' !
 	    
 	    pigment = nil ifFalse: [
 		pname := PObject getAName.
-		Transcript cr; show: '#declare ',pname,'='.
-		pigment emitNested.
+		retVal := retVal, '#declare ',pname,'=', pigment emitNested.
 	    ] ifTrue: [pname := nil].
 	    normal = nil ifFalse: [
 		nname := PObject getAName.
-		Transcript cr; show: '#declare ',nname,'='.
-		normal emitNested.
+		retVal := retVal, '#declare ',nname,'=', normal emitNested.
 	    ] ifTrue: [nname := nil].
-	    Transcript cr.
 	    
-	    finish emitFinishHackPname: pname nname: nname.
+	    ^ retVal, (finish emitFinishHackPname: pname nname: nname).
 	] ifFalse: [
-	    Transcript show: 'texture{'.
-	    finish = nil  ifFalse:[finish  emitNested].
-	    normal = nil  ifFalse:[normal  emitNested].
-	    pigment = nil ifFalse:[pigment emitNested].
-	    Transcript show: '}'.
+	    retVal :=  'texture{'.
+	    finish = nil  ifFalse:[retVal := retVal, finish  emitNested].
+	    normal = nil  ifFalse:[retVal := retVal, normal  emitNested].
+	    pigment = nil ifFalse:[retVal := retVal, pigment emitNested].
+	    ^ retVal, '}'.
 	].
 !
     tag
@@ -193,54 +196,50 @@ PFunnyNester subclass: #PMapped
 	elements := OrderedCollection new.
 !
     emitCore
-	"(pattern = nil) ifTrue: [
-	    self emitOther.
-	] ifFalse: ["
-	pattern emit.
-	Transcript show: ' '.
-	type = 'normal' ifTrue: [ Transcript show: '1' ].
+	| retVal |
+        retVal := pattern emit, ' '.
+
+	type = 'normal' ifTrue: [ retVal := retVal, '1 ' ].
 	"To control normal depth, a map must be used."
 
 	locations size > 0 ifTrue: [
 	    
 	    type = 'normal' ifTrue: [
-		Transcript show: 'slope_map{'.
+		retVal := retVal, 'slope_map{'.
 	    ] ifFalse: [
-		Transcript show: self tag, '_map{'.
+		retVal := retVal, self tag, '_map{'.
 	    ].
 	
 	    1 to: locations size do: [ :i|
-		Transcript show: '[', (locations at: i) printString, ','.
-		(elements at: i) emitNaked.
-		Transcript show: ']'.
+		retVal := retVal, '[', (locations at: i) printString, ','
+		    , (elements at: i) emitNaked, ']'.
 	    ].
-	    Transcript show: '}'.
+	    retVal := retVal, '}'.
 	].
-	"]."
-!
+	^retVal
+!  """"""
     emitFinishHackPname: pn nname: nn
-	Transcript show: 'texture{'.
-	pattern emit.
-	Transcript show: ' texture_map{'.
+	| retVal |
+        retVal := 'texture{', pattern emit, ' texture_map{'.
 	
 	1 to: locations size do: [ :i|
 	    | thisfinish |
-	    Transcript show: '[', (locations at: i) printString, ','.
+	    retVal := retVal, '[', (locations at: i) printString, ','.
 	    thisfinish := elements at: i.
 	    thisfinish class = PMapped ifTrue: [
-		thisfinish emitFinishHackPname: pn nname: nn.
+		retVal := retVal, (thisfinish emitFinishHackPname: pn nname: nn).
 	    ] ifFalse: [
 		pn = nil ifFalse: [
-		    Transcript show: 'pigment{', pn, '}'.
+		    retVal := retVal, 'pigment{', pn, '}'.
 		].
 		nn = nil ifFalse: [
-		    Transcript show: 'normal{', nn, '}'.
+		    retVal := retVal, 'normal{', nn, '}'.
 		].
 		(elements at: i) emitNested.
 	    ].
-	    Transcript show: ']'.
+	    retVal := retVal, ']'.
 	].
-	Transcript show: '}}'.
+	^retVal, '}}'.
 	    
 !
     add: elem at: loc
@@ -261,7 +260,7 @@ Object subclass: #PNormalMapPair
 	right := r.
 !
     emit
-	Transcript show: '<', left printStr, ',', right printStr, '>'.
+	^ '<', left printStr, ',', right printStr, '>'.
 !!
 
 
@@ -276,8 +275,7 @@ Object subclass: #PCombinedTransform
 	rest := r.
 !
      emit
-	 first emit.
-	 rest emit.
+	 ^first emit, rest emit.
 !
      inverse
 	 ^PCombinedTransform new initFirst: (rest inverse) rest: (first inverse).
@@ -293,7 +291,7 @@ Object subclass: #PPrimitiveTransform
 	type := t. x := xloc. y := yloc. z := zloc.
 !
     emit
-	Transcript show: type, '<',x printString,',',y printString,',',z printString,'> '.
+	^type, '<',x printString,',',y printString,',',z printString,'> '.
 !
     inverse
 	type = 'scale' ifTrue: [^PPrimitiveTransform new init: 'scale' x: 1/x y: 1/y z: 1/z].
@@ -322,12 +320,10 @@ Object subclass: #PFunction
 	contents := c.
 !
     emit "by default, emit as a pattern"
-	Transcript show: 'function{'.
-	self emitFn.
-	Transcript show: '}'.
+	^'function{', self emitFn, '}'.
 !
     emitFn
-	contents emit.
+	^contents emit.
 !!
 
 
@@ -343,16 +339,15 @@ Object subclass: #PPattern
 	transforms := OrderedCollection new.
 !
     emit
-	name emit.
+	|retVal|
+	retVal := name emit.
 	transforms do: [:t|
-	    Transcript show: ' '.
-	    t emit.
+	    retVal := retVal, ' ', t emit.
 	].
+	^retVal
 !
-    emitFn
-	Transcript show: 'pattern{'.
-	self emit.
-	Transcript show: '}'.
+    emitFn 
+	^'pattern{', self emit, '}'.
 !
     transform: t
 	transforms add: t.
@@ -365,14 +360,13 @@ Object subclass: #PPattern
  programmatically emit yet."
 !String methodsFor: 'PSDLcodegen'!
     emit
-	Transcript show: self.
+	^self
 !
     emitNested
-	Transcript show: self.
+	^self.
 !
     emitNaked
-	"Inappropriate!"
-	Transcript show: self.
+	^self.
 		   "Actually, this had better not be called along with 'emit',
 		    'cause only one of them could possibly be valid."
 !!
@@ -381,15 +375,16 @@ Object subclass: #PPattern
 red := 'pigment{color rgb <1,0,0>}'.
 yellow := 'pigment{color rgb <1,1,0>}'.
 
-p := PObject new init: nil tag: 'sphere' body: '<0,0,0> 1' ; emitNested
-    ; pigment: red ; emitNested
+p := PObject new init: nil tag: 'sphere' body: '<0,0,0> 1'
+    ; pigment: red 
     ; finish: (PMapped new init: 'finish' pat: (PPattern new init: 'bozo' ; 
 						    transform: 'warp{turbulence 0.1}' )  ;
 		    add: 'finish{ambient 1}' at: 0.2 ;
-		    add: 'finish{ambient 0.2}' at: 0.4 ) ; emitNested
-    ; transform: (PPrimitiveTransform new init: 'rotate' x: 45 y: 30 z:16) inverse
-    ; emitNested.
+		    add: 'finish{ambient 0.2}' at: 0.4 )
+    ; transform: (PPrimitiveTransform new init: 'rotate' x: 45 y: 30 z:16) inverse.
+Transcript show: (p emitNested).
 
 c := PCSG new.
 c init: 'union'.
-c addChild: p ; addChild: p ; emitNested.
+c addChild: p ; addChild: p.
+Transcript show: (c emitNested).

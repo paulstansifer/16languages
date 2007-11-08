@@ -12,7 +12,7 @@ Object subclass: #PParser
 	" create some of the elements of syntax "
 	tags add: (ParserTagState new init: 'code' enterSyn: '[=' leaveSyn: '=]');
 	     add: (ParserTagState new init: 'i' enterSyn: '///' leaveSyn: '///');
-	     add: (ParserTagState new init: 'b' enterSyn: '***' leaveSyn: '***');
+	     add: (ParserTagState new init: 'b' enterSyn: '(**' leaveSyn: '**)');
 	     add: (ParserTagState new init: 'strike' enterSyn: '-s-' leaveSyn: '-s-');
 	     add: (ParserWPLink new init);
 	     add: (ParserPlain new init: '&mdash;' syn: '---');
@@ -121,8 +121,10 @@ Object subclass: #PParser
 	"Transcript cr."
 !
     sub: char
-	char = $< ifTrue:[^'&lt;'].
-	char = $> ifTrue:[^'&gt;'].
+	"Blogger doesn't like it when I do this.
+
+	 char = $< ifTrue:[^'&lt;'].
+	char = $> ifTrue:[^'&gt;']."
 	^char asString.
 !
     tagFromList: list
