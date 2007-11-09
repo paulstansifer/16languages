@@ -1,4 +1,5 @@
 #summary Programs written over the course of the year
+#labels Featured
 
 = Smalltalk =
   * *PParser.st* Parser from a simple wiki-like syntax into HTML (with a little massaging for Blogger's HTML editor).
