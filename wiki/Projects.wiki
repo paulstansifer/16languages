@@ -1,0 +1,11 @@
+#summary Programs written over the course of the year
+
+= Smalltalk =
+  * *PParser.st* Parser from a simple wiki-like syntax into HTML (with a little massaging for Blogger's HTML editor).
+== Not present in the repository ==
+_This was created in Squeak and hasn't been exported yet._
+  * *FlatEarth*  Graphics hack, based on a simplistic simulation scheme.
+= FP =
+  * *rainbows.fp* Generate simple gradient-based images in HSV.  Requires *fp2ppm.pl*, a Perl script to transform the output into a PPM file.
+  * *regex.fp*  Skeleton of a regex matcher.  Functionality is really limited.
+  * *toposort.fp*  A topological sorter.  Pretty poor big-O because the algorithm is naturally stateful.
