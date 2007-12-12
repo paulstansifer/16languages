@@ -1,0 +1,58 @@
+V "GNAT Lib v4.0"
+M P W=b
+A -gnat05
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U staticsub%b		staticsub.adb		0a3942ab NE SU
+W ada%s			ada.ads			ada.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20030424175357 7cd43be2
+D a-charac.ads		20031021134153 b6f39c34
+D a-chlat1.ads		20030424175352 e2279e26
+D a-except.ads		20031021134153 69f30d44
+D a-finali.ads		20030424175353 ee64b9e9
+D a-filico.ads		20041027122919 74630936
+D a-ioexce.ads		20030424175353 a50c222b
+D a-stream.ads		20030424175354 66f7f9b0
+D a-string.ads		20050210135014 9ca7eb9f
+D a-strmap.ads		20050210135139 d1d75a57
+D a-strunb.ads		20050210135138 9883dfb1
+D a-tags.ads		20050210135043 6204e4c8
+D a-tags.adb		20050210135043 39886c94
+D a-textio.ads		20050210135139 53071d84
+D interfac.ads		20041208114938 279b6d6d
+D i-cstrea.ads		20031215115100 85085d90
+D staticsub.adb		20071202011907 c1bd809e
+D system.ads		20050114151229 2eba3597
+D s-crtl.ads		20050210134915 aee152b1
+D s-exctab.ads		20031021134213 e14b1567
+D s-ficobl.ads		20040706135731 ed792749
+D s-finimp.ads		20040715203441 af434eef
+D s-finroo.ads		20040305105858 dd60a64c
+D s-htable.ads		20031021134214 b7952fb1
+D s-parame.ads		20031021134214 c4321b48
+D s-secsta.ads		20040809122421 db466d0c
+D s-soflin.ads		20050210135723 ddd0a406
+D s-stache.ads		20040322140628 5ff85b87
+D s-stalib.ads		20040419152013 00c059cd
+D s-stoele.ads		20040419152014 72d7e8ed
+D s-stoele.adb		20040423105831 d6d2aebc
+D s-stratt.ads		20031021134214 d0a26af3
+D s-traent.ads		20031021134218 a2519bfe
+D s-unstyp.ads		20040611104739 e021fbde
+D unchconv.ads		20030424175420 34860a55
+X 1 ada.ads
+16K9*Ada 19e8 17|1r6 1r19 2r6
+X 9 a-string.ads
+16K13*Strings 35e16 17|1r23
+X 11 a-strunb.ads
+41K21*Unbounded 422e26 17|1w31
+X 14 a-textio.ads
+49K13*Text_IO 451e16 17|1w10 2r10
+X 17 staticsub.adb
+14U11*StaticSub 14b11 21l5 21t14
+

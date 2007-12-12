@@ -1,0 +1,7 @@
+I'm getting close to finished with the graphics hack, but there's a typing syntax issue that's driving me crazy.  There won't be any updates while I'm on Thanksgiving break (though hopefully there will be work done), so here's a picture of what I have so far.
+
+* I totally don't understand why [=.all=] dereferences a pointer.  It's just really strange.  
+* [=.all=] seems to be opposed to [=.constant=] access, which makes some sense, I guess.
+* I'm using examples from http://sandbox.mc.edu/~bennet/ada/examples/index.html as guides.  They're pretty good.
+* [=bars2.adb:30:26: R "enames" expected=] is the strangest error message in the world.  Is it trying to tell me to use the keyword "[=renames=]"?
+* Using aggregates instead of writing a full constructor makes banging out a lightweight class hierarchy much simpler.

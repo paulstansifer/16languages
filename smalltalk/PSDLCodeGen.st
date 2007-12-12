@@ -367,8 +367,8 @@ Object subclass: #PPattern
 !
     emitNaked
 	^self.
-		   "Actually, this had better not be called along with 'emit',
-		    'cause only one of them could possibly be valid."
+	"Actually, this had better not be called along with 'emit',
+	 'cause only one of them could possibly be valid."
 !!
 
 | red yellow |

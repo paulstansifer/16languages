@@ -1,0 +1,90 @@
+V "GNAT Lib v4.0"
+M P W=b
+P SS ZX
+R nnnnnnnvnnnnnnvnvnnvvnnnnnvnnnnnnnnvnvnnnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnn
+
+U tpk%b			tpk.adb			1515c54e NE SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.float_aux%s  a-tiflau.adb		a-tiflau.ali
+W system%s		system.ads		system.ali
+W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.img_real%s	s-imgrea.adb		s-imgrea.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+
+D ada.ads		20030424175357 7cd43be2
+D a-except.ads		20031021134153 69f30d44
+D a-finali.ads		20030424175353 ee64b9e9
+D a-filico.ads		20041027122919 74630936
+D a-ioexce.ads		20030424175353 a50c222b
+D a-numeri.ads		20050210135700 ae95bc37
+D a-numaux.ads		20050103153418 95271114
+D a-ngelfu.ads		20030424175353 0b41cace
+D a-ngelfu.adb		20040625163924 31434298
+D a-stream.ads		20030424175354 66f7f9b0
+D a-tags.ads		20050210135043 6204e4c8
+D a-tags.adb		20050210135043 39886c94
+D a-textio.ads		20050210135139 53071d84
+D a-tiflau.ads		20030424175355 b5940daf
+D a-tiflio.ads		20030424175355 9e591677
+D a-tiflio.adb		20031021134154 6afa69de
+D a-unccon.ads		20030424175356 51e09df2
+D interfac.ads		20041208114938 279b6d6d
+D i-cstrea.ads		20031215115100 85085d90
+D system.ads		20050114151229 2eba3597
+D s-crtl.ads		20050210134915 aee152b1
+D s-exctab.ads		20031021134213 e14b1567
+D s-exnllf.ads		20031021134213 d9aa663d
+D s-fatflt.ads		20031021134214 440b1f01
+D s-fatgen.ads		20031021134214 2ec1b616
+D s-fatgen.adb		20041027135510 129b1f5d
+D s-ficobl.ads		20040706135731 ed792749
+D s-finimp.ads		20040715203441 af434eef
+D s-finroo.ads		20040305105858 dd60a64c
+D s-htable.ads		20031021134214 b7952fb1
+D s-imgint.ads		20030424175410 0b6207e2
+D s-imgrea.ads		20030424175410 3dba5312
+D s-parame.ads		20031021134214 c4321b48
+D s-secsta.ads		20040809122421 db466d0c
+D s-soflin.ads		20050210135723 ddd0a406
+D s-stache.ads		20040322140628 5ff85b87
+D s-stalib.ads		20040419152013 00c059cd
+D s-stoele.ads		20040419152014 72d7e8ed
+D s-stoele.adb		20040423105831 d6d2aebc
+D s-stratt.ads		20031021134214 d0a26af3
+D s-traent.ads		20031021134218 a2519bfe
+D s-unstyp.ads		20040611104739 e021fbde
+D tpk.adb		20071116064717 4d531204
+D unchconv.ads		20030424175420 34860a55
+X 1 ada.ads
+16K9*Ada 19e8 43|1r6 2r6 6r25 7r24 23r7 25r10 27r10
+X 6 a-numeri.ads
+17K13*Numerics 33e17 43|2r10 6r29
+X 8 a-ngelfu.ads
+19k22*Generic_Elementary_Functions 73e46 43|2w19 6r38
+22V13 Sqrt{float} 43|11r20[6]
+X 13 a-textio.ads
+49K13*Text_IO 451e16 43|1w10 7r28 23r11 25r14 27r14
+243U14*Put 43|23r19
+264U14*Put_Line 43|25r22 27r22
+X 15 a-tiflio.ads
+47k21*Float_IO 90e25 43|7r36
+58U14 Get 43|19r12[7]
+X 43 tpk.adb
+4U11*tpk 4b11 30t4
+6K12 FMath 11r14
+7K12 F_IO 19r7
+9V13 F{float} 9b13 9>15 12l8 12t9 22r14
+9f15 X{float} 11r29 11r41
+14a4 A(float) 18r13 19m16 22r16
+15f4 Res{float} 22m7 24r10 27r43
+18i8 I{integer} 19r18
+21i8 I{integer} 22r18 23r37
+

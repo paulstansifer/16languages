@@ -1,0 +1,133 @@
+V "GNAT Lib v4.0"
+M P W=b
+A -gnat05
+P SS ZX
+R nnnvnnnvvnnnnnvnvnnvvvvnvnvnvnnvnnnvnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U bars2%b		bars2.adb		be683c9f NE SU IL
+W ada%s			ada.ads			ada.ali
+W ada.finalization.list_controller%s  a-filico.adb  a-filico.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.streams%s		a-stream.ads		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.string_ops%s	s-strops.adb		s-strops.ali
+W system.string_ops_concat_3%s  s-sopco3.adb	s-sopco3.ali
+
+D ada.ads		20030424175357 7cd43be2
+D a-except.ads		20031021134153 69f30d44
+D a-finali.ads		20030424175353 ee64b9e9
+D a-filico.ads		20041027122919 74630936
+D a-ioexce.ads		20030424175353 a50c222b
+D a-numeri.ads		20050210135700 ae95bc37
+D a-nuflra.ads		20031021134153 3fd6d45e
+D a-stream.ads		20030424175354 66f7f9b0
+D a-tags.ads		20050210135043 6204e4c8
+D a-tags.adb		20050210135043 39886c94
+D a-textio.ads		20050210135139 53071d84
+D bars2.adb		20071128135615 d2b9f545
+D interfac.ads		20041208114938 279b6d6d
+D i-cstrea.ads		20031215115100 85085d90
+D system.ads		20050114151229 2eba3597
+D s-crtl.ads		20050210134915 aee152b1
+D s-exctab.ads		20031021134213 e14b1567
+D s-ficobl.ads		20040706135731 ed792749
+D s-finimp.ads		20040715203441 af434eef
+D s-finroo.ads		20040305105858 dd60a64c
+D s-htable.ads		20031021134214 b7952fb1
+D s-imgint.ads		20030424175410 0b6207e2
+D s-parame.ads		20031021134214 c4321b48
+D s-secsta.ads		20040809122421 db466d0c
+D s-soflin.ads		20050210135723 ddd0a406
+D s-stache.ads		20040322140628 5ff85b87
+D s-stalib.ads		20040419152013 00c059cd
+D s-stoele.ads		20040419152014 72d7e8ed
+D s-stoele.adb		20040423105831 d6d2aebc
+D s-stratt.ads		20031021134214 d0a26af3
+D s-strops.ads		20050210135017 87984372
+D s-sopco3.ads		20030424175413 e851a686
+D s-sopco4.ads		20030424175413 c9d7ac99
+D s-sopco5.ads		20030424175413 9898affe
+D s-traent.ads		20031021134218 a2519bfe
+D s-unstyp.ads		20040611104739 e021fbde
+D unchconv.ads		20030424175420 34860a55
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 2r3 3r5 4r3
+X 6 a-numeri.ads
+17K13*Numerics 33e17 12|2r7 4r7
+X 7 a-nuflra.ads
+50K22*Float_Random 101e30 12|2w16 4r16
+54R9*Generator 12|95r46 121r10
+56F12*Uniformly_Distributed{float}
+58V13*Random{56F12} 12|98r17 99r12 103r15 113r40
+60U14*Reset 12|123r4
+X 11 a-textio.ads
+49K13*Text_IO 451e16 12|1w10 3r9
+243U14*Put 12|135r10
+264U14*Put_Line 12|129r4 130r4 131r4 137r7 142r4
+X 12 bars2.adb
+7U11*bars2 7b11 144t4
+8K12 Bars 19l8 19e12 21r8 65r20
+9R12 Bar 10r30 12c12 15e20 17r25 24r24 31r25 38r24
+10P12 Bar_Ptr(9R12) 25r17 39r18 60r17 95r64 96r16 120r14
+12H12 Bar 17p16
+14i13 Pixels{integer} 64r19 65r46 75r47 82r32 100r33 104r32 107r32 112r31
+17y16 Emit{integer} 17>21 17>31 17>34 65r25 67r20 75r17 88r20 90r20 135r28
+. 142r27
+17r21 B{12R12}
+17i31 X{integer}
+17i34 Y{integer}
+23K12 Pairs 28l8 28e13 45r25 49r23 58b17 70l8 70t13
+24R12 Pair<12R12> 26e17 27P16 27r25 45r31 59r25 107r26
+25p10 L{10P12} 62r17 90r27 101r33 108r23
+25p13 R{10P12} 63r17 88r27 102r33 109r23
+27V16 Emit{integer} 27>21 27>32 27>35 59b16 69l11 69t15
+27r21 B{24R12} 59b21 62r15 63r15 64r17 65r44
+27i32 X{integer} 59b31 65r37 67r32
+27i35 Y{integer} 59b34 64r13 65r40 67r35
+30K12 Colors 35l8 35e14 49r8 51b17 56l8 56t14
+31R12 Color<12R12> 33e17 34P16 34r25 52r25 112r24
+32i10 Value{integer} 54r19 113r23
+34V16 Emit{integer} 34>21 34>33 34>36 52b16 55l11 55t15
+34r21 B{31R12} 52b21 54r17
+34i33 X{integer} 52b32
+34i36 Y{integer} 52b35
+37K12 Dupes 42l8 42e13 49r16 72b17 77l8 77t13
+38R12 Dupe<12R12> 40e17 41P16 41r25 73r25 104r26
+39p10 Child{10P12} 75r24 105r32
+41V16 Emit{integer} 41>21 41>32 41>35 73b16 76l11 76t15
+41r21 B{38R12} 73b21 75r22 75r45
+41i32 X{integer} 73b31 75r35
+41i35 Y{integer} 73b34 75r38
+44K12 Swirls 47l8 47e14 49r30 79b17 93l8 93t14
+45R12 Swirl<24R12> 45e52 46P16 46r25 80r25 100r26
+46V16 Emit{integer} 46>21 46>33 46>36 80b16 92l11 92t15
+46r21 B{45R12} 80b21 82r30 88r25 90r25
+46i33 X{integer} 80b32 84r23 88r34 90r34
+46i36 Y{integer} 80b35 84r21 88r37 90r37
+60p10 L{10P12} 62m10 67r25
+60p13 R{10P12} 63m10 65r30
+81i10 Offset{integer} 84m10 87r13
+82i10 Height{integer} 84r30 87r26 88r43 90r43
+95V16 MakeBar{10P12} 95b16 95>25 95>40 101r38 102r38 105r41 108r28 109r28
+. 116l8 116t15 127r15
+95i25 Pix{integer} 98r42 100r43 101r46 102r46 104r42 105r49 107r42 108r36
+. 109r36 112r41
+95r40 Rnd{7|54R9} 98r24 99r19 101r55 102r55 103r22 105r58 108r45 109r45 113r47
+96p7 RetVal{10P12} 100m12 104m12 107m12 112m10 115r14
+119i4 X_Size{integer} 124m4 130r27 134r35
+119i12 Y_Size{integer} 125m4 127r23 130r57 133r32
+120p4 MainBar{10P12} 127m4 135r33 142r32
+121r4 Rnd{7|54R9} 123r10 127r31
+133i8 Y{integer} 135r49
+134i11 X{integer} 135r46
+

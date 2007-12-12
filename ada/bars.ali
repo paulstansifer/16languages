@@ -1,0 +1,107 @@
+V "GNAT Lib v4.0"
+M P W=b
+A -gnat05
+P SS ZX
+R nnnvnnnnnnnnnnvnvnnvvvvnvnvnnnnvnnnvnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
+
+U bars%b		bars.adb		fa43337f NE SU IL
+W ada%s			ada.ads			ada.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.streams%s		a-stream.ads		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W interfaces%s		interfac.ads		interfac.ali
+W system%s		system.ads		system.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.string_ops%s	s-strops.adb		s-strops.ali
+W system.string_ops_concat_3%s  s-sopco3.adb	s-sopco3.ali
+
+D ada.ads		20030424175357 7cd43be2
+D a-except.ads		20031021134153 69f30d44
+D a-finali.ads		20030424175353 ee64b9e9
+D a-filico.ads		20041027122919 74630936
+D a-ioexce.ads		20030424175353 a50c222b
+D a-numeri.ads		20050210135700 ae95bc37
+D a-nuflra.ads		20031021134153 3fd6d45e
+D a-stream.ads		20030424175354 66f7f9b0
+D a-tags.ads		20050210135043 6204e4c8
+D a-tags.adb		20050210135043 39886c94
+D a-textio.ads		20050210135139 53071d84
+D bars.adb		20071120024845 9692faa5
+D interfac.ads		20041208114938 279b6d6d
+D i-cstrea.ads		20031215115100 85085d90
+D system.ads		20050114151229 2eba3597
+D s-crtl.ads		20050210134915 aee152b1
+D s-exctab.ads		20031021134213 e14b1567
+D s-ficobl.ads		20040706135731 ed792749
+D s-finimp.ads		20040715203441 af434eef
+D s-finroo.ads		20040305105858 dd60a64c
+D s-htable.ads		20031021134214 b7952fb1
+D s-imgint.ads		20030424175410 0b6207e2
+D s-parame.ads		20031021134214 c4321b48
+D s-secsta.ads		20040809122421 db466d0c
+D s-soflin.ads		20050210135723 ddd0a406
+D s-stache.ads		20040322140628 5ff85b87
+D s-stalib.ads		20040419152013 00c059cd
+D s-stoele.ads		20040419152014 72d7e8ed
+D s-stoele.adb		20040423105831 d6d2aebc
+D s-stratt.ads		20031021134214 d0a26af3
+D s-strops.ads		20050210135017 87984372
+D s-sopco3.ads		20030424175413 e851a686
+D s-sopco4.ads		20030424175413 c9d7ac99
+D s-sopco5.ads		20030424175413 9898affe
+D s-traent.ads		20031021134218 a2519bfe
+D s-unstyp.ads		20040611104739 e021fbde
+D unchconv.ads		20030424175420 34860a55
+X 1 ada.ads
+16K9*Ada 19e8 12|1r6 2r3 3r5 4r3
+X 6 a-numeri.ads
+17K13*Numerics 33e17 12|2r7 4r7
+X 7 a-nuflra.ads
+50K22*Float_Random 101e30 12|2w16 4r16
+54R9*Generator 12|22r43 76r10
+56F12*Uniformly_Distributed{float}
+58V13*Random{56F12} 12|25r17 26r12 36r13
+60U14*Reset 12|78r4
+X 11 a-textio.ads
+49K13*Text_IO 451e16 12|1w10 3r9
+243U14*Put 12|90r10
+264U14*Put_Line 12|84r4 85r4 86r4 92r7 97r4
+X 12 bars.adb
+7U11*bars 7b11 99t4
+9E9 Bar_Style 9e48 18r17
+9n23 Two{9E9} 31r39 61r15
+9n28 Swirl{9E9} 27r39 52r15
+9n35 White{9E9} 40r40 67r15
+9n42 Black{9E9} 37r40 69r15
+11R9 Bar 12r27 14c9 20e17 27r26 31r26 37r27 40r27
+12P9 Bar_Ptr(11R9) 16r14 17r14 22r61 23r16 47r22 75r14
+16p10 L{12P9} 28r23 32r23 38r32 41r32 55r31 65r34
+17p10 R{12P9} 29r23 33r23 38r43 41r43 54r31 63r34
+18e10 Kind{9E9} 27r31 31r31 37r32 40r32 51r18
+19i10 Pixels{integer} 27r46 31r44 37r47 40r47 49r33
+22V13 MakeBar{12P9} 22b13 22>22 22>37 28r28 29r28 32r28 33r28 45l8 45t15
+. 82r15
+22i22 Pix{integer} 25r42 27r56 28r36 29r36 31r54 32r36 33r36 37r57 40r57
+22r37 Rnd{7|54R9} 25r24 26r19 28r45 29r45 32r45 33r45 36r20
+23p7 RetVal{12P9} 27m12 31m12 37m13 40m13 44r14
+47V13 Emit{integer} 47b13 47>18 47>31 47>34 54r20 55r20 63r23 65r23 72l8
+. 72t12 90r28 97r27
+47p18 B{12P9} 49r27 51r12 54r25 55r25 63r28 65r28
+47i31 X{integer} 53r25 54r34 55r34 63r37 65r37
+47i34 Y{integer} 53r23 54r37 55r37 62r16 63r40 65r40
+48i7 Offset{integer} 53m13 54r42 55r45
+49i7 Height{integer} 53r31 62r24 63r44
+74i4 X_Size{integer} 79m4 85r27 89r35
+74i12 Y_Size{integer} 80m4 82r23 85r57 88r32
+75p4 MainBar{12P9} 82m4 90r33 97r32
+76r4 Rnd{7|54R9} 78r10 82r31
+88i8 Y{integer} 90r45
+89i11 X{integer} 90r42
+

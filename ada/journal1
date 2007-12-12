@@ -1,0 +1,5 @@
+* For some reason, Ada's error messages always seem to be really informative.  I suppose that some of this is by comparison with FP's error messages (the complete set of which are as follows: [=syntax error=], [=?=]), but it also seems to quite often actually point me to the right place.
+* It's surprisingly useful to have an exponentiation operator.
+* I like not having to parenthesize the conditions in an [=if=].  For some reason, typing [=then=] feels a lot cheaper than adding the extra parens.  I guess perhaps they mush up with the parentheses that inevitably are a part of the condition?
+* Also, the named-argument style for constructors [=Font := (Face => Helvetica, Weight => Bold, Size => 12)=] is pretty neat.  Constructors never have any sensible ordering for their arguments, anyways.
+* I really feel kinda guilty for liking Ada like this, like there's something that I'm ignoring.  I hope I figure out what it is soon, so I don't spend the next two weeks trying to figure out if I have Stockholm Syndrome or something.
